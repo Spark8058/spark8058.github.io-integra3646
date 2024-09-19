@@ -1,0 +1,584 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* font-family: Arial, sans-serif; */
+    font-family: "Roboto", sans-serif; 
+    
+    /* background: url('Resim12.jpg') no-repeat; */
+    background-color: #ffdd00;
+
+  }
+  
+  .navbar {
+    margin-top: 0px;
+    background-color: #ffdd00;
+    padding: 10px 20px;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Make sure it's above other elements */
+    background-color: #ffdd00; /* Customize this according to your design */
+  }
+  
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 60px;
+    margin-left: 65%;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: 40px;
+  }
+  
+  .nav-links li {
+    margin-left: 30px;
+  }
+  
+  .nav-links a {
+    color: rgb(0, 0, 0);
+    /* font-family: "Gill Sans", sans-serif; */
+    /* font-family:Georgia, 'Times New Roman', Times, serif; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .nav-links a:hover {
+
+    /* box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.6);
+    transform: translateY(-2px); */
+    box-sizing: inherit;
+    background-color: #ffed00;
+    transform: scale(1.1); /* Slightly enlarge the link */
+    -webkit-box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.2),
+        0 15px 48px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.2),
+        0 15px 48px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.2),
+        0 15px 48px 0 rgba(0, 0, 0, 0.3);
+    
+    border-bottom: 5px solid black;
+  }
+
+  .nav-links a:hover {
+    background-color: #ffcc00; /* Change background color on hover */
+    color: #000; /* Change text color on hover */
+    transform: scale(1.1); /* Slightly enlarge the button */
+    transition: 0.3s ease; /* Smooth transition */
+    border-radius: 5px; /* Add rounded corners */
+  }
+
+  
+  
+  .home img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  /* Hero Section */
+.hero {
+    position: relative;
+    top: 30px;
+    height: 80vh;
+    background-image: url('team192.png'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(255, 221, 0, 1), rgba(255, 221, 0, 0.4), rgba(255, 215, 0, 0)); /* Yellow gradient overlay */
+}
+
+.hero .content {
+    position: relative;
+    text-align: center;
+    color: black;
+    z-index: 1;
+}
+
+.hero .content h1 {
+    font-size: 80px;
+    font-size: 4vw;
+    color: black;
+    letter-spacing: -1px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-bottom: -30px;
+    /* font-family: 'varsity_regular';  */
+}
+
+.hero .content img {
+  height: 5px;
+  width: 200px;
+  margin-top: 20%;
+}
+
+.hero .highlight {
+    text-transform: uppercase;
+    font-size: 200px;
+    font-size: 10vw;
+    font-weight: normal;
+    /* font-weight: bold; */
+    letter-spacing: 10px;
+    color: black;
+    font-family: 'varsity_regular'; 
+    
+}
+
+#transition1 {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 50%;
+    height: auto;
+}
+
+
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+  /* .full-width-image:hover {
+    transform: scale(1.05);
+  } */
+
+  /* Flexbox layout for the About section */
+  .about-section {
+    text-align: center;
+    margin: -10px 0;
+    background-color: #000;
+  }
+
+  .about-columns {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+
+  .about-column {
+    flex: 1;
+    padding: 10px;
+  }
+
+  /* Button styling */
+  .about-button {
+    font-size: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00; /* Yellow */
+    color: #000; /* Black */
+    text-decoration: none;
+    border-radius: 35px;
+    margin-top: 100px;
+    border-style: solid;
+    border-color: #ffdd00;
+    margin-bottom: 2%;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .about-button:hover {
+
+    border-color: #ffdd00;
+    background-color: #000;
+    color: #ffdd00;
+  }
+
+  h2 {
+    color: white;
+    font-size: 56px;
+    font-size: 3.5vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+
+  h3 {
+    margin-top: 20%;
+    font-size: 100px;
+    font-size: 4.5vw;
+    color: #ffdd00;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 50px;
+    font-size: 3vw;
+    color: #ffeab0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+
+
+
+
+
+.hero2 {
+  position: relative;
+  height: 80vh;
+  background-image: url('Resim2.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero2 .overlay2 {
+  position: absolute;
+  margin-top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #ffdd00, rgba(255, 215, 0, 0), #ffdd00); /* Yellow gradient overlay */
+  z-index: 1;
+}
+
+.hero2 .content2 {
+  position: relative;
+  text-align: center;
+  color: black;
+  z-index: 2;
+}
+
+.hero2 .content2 h1 {
+  font-size: 80px; /* Adjust as needed */
+  color: black;
+  font-weight:200;
+  letter-spacing: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.container2 {
+  width: 650px;
+  height: 450px;
+  /* right: 100px; */
+  background-color: rgba(0, 0, 0, 0.35);
+  /* margin-right: 850px; */
+  margin-left: -80%;
+}
+
+h6 {
+  font-size: 26px;
+  /* font-size: 3vw; */
+  margin-top: 80px;
+  color: aliceblue;
+  font-weight: normal;
+  letter-spacing: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+ 
+}
+
+h5 {
+  padding: 15px;
+  margin-top: 100px;
+  font-size: 50px;
+  /* font-size: 4.5vw; */
+  color: aliceblue;
+  font-weight: normal;
+  letter-spacing: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+ 
+}
+
+
+
+.hero3 {
+  top: 150px;
+  position: relative;
+  height: 80vh;
+  background-image: url('teamPhoto.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.hero3 .overlay3 {
+  position: absolute;
+  margin-top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #ffdd00, rgba(255, 215, 0, 0), #ffdd00); /* Yellow gradient overlay */
+  z-index: 1;
+}
+
+.hero3 .content3 {
+  position: relative;
+  text-align: center;
+  color: black;
+  z-index: 2;
+}
+
+.hero3 .content3 h1 {
+  font-size: 80px; /* Adjust as needed */
+  color: black;
+  font-weight: normal;
+  letter-spacing: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+/* .container3 h5 {
+  font-size: 50px;
+  color: aliceblue;
+  font-weight: normal;
+  letter-spacing: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+ 
+} */
+
+
+.container3 {
+  /* width: 650px; */
+  width: 65%;
+  /* height: 450px; */
+  height: 85%;
+  /* right: 100px; */
+  background-color: rgba(0, 0, 0, 0.35);
+  /* margin-left: 850px; */
+  margin-left: 60%;
+
+}
+
+
+
+
+button {
+  margin-top: 100px;
+  width: 200px;
+  height: 70px;
+  top: 30px;
+  margin-bottom: 20px;
+  font-size: 32px;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #ffdd00;
+  background-color: #ffdd00;
+  color: #000;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffdd00;
+}
+
+#tr3 {
+  top: 20%;
+}
+
+.sponsor-section {
+  margin-top: -10px;
+  background-color: #000;
+  text-align: center;
+}
+
+.sponsor-section .thank {
+  margin-top: 100px;
+}
+
+
+#sponsor {
+  margin-bottom: 110px;
+  font-size: 100px;
+  font-size: 5vw;
+  font-weight: 300;
+}
+
+.thank {
+  top: 200px;
+  /* margin-left: 80px;
+  margin-right: 80px; */
+    /* padding-left: 80px;
+    padding: 80px; */
+  text-align: center;
+  font-size: 44px;
+  font-size: 2.3vw;
+
+  font-weight: 300;
+}
+
+
+
+#footer img {
+  margin-left: 1%;
+  height: auto;
+  width: auto;
+  max-height: 130px;
+  max-width: 130px;
+}
+
+.footer {
+background-color: #ffdd00;
+}
+
+
+.sign {
+  margin-top: 37px;
+  margin-bottom: 2%;
+  text-align: center;
+  margin-left: 1%;
+  font-size: 20px;
+  background-color: #ffdd00;
+}
+
+.sign img {
+  height: 28px;
+  border-radius: 5px;
+  margin-right: 3px;
+}
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
+.section {
+  width: 100%;
+  min-height: 100vh; /* Makes sure it takes the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover; /* Ensures background images cover the section */
+  background-position: center;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .container {
+      flex-direction: row;
+  }
+}
+
+@media (max-width: 1600px) {
+  .container2, .container3 {
+    width: 45%; 
+    height: auto; 
+    margin: 0px; 
+    max-width: initial;
+  }
+  
+  .container3 {
+    margin: 50%;
+  }
+  
+  .container2 {
+    margin: 2%;
+  }
+  h5 {
+    font-size: 4vw;
+   
+  }
+  h6 {
+    font-size: 2.6vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-columns {
+    display: grid;
+  }
+  .container2, .container3 {
+    width: 65%; 
+    height: auto; 
+    margin: 0px; 
+    max-width: initial;
+  }
+  
+  .container3 {
+    margin: 30%;
+  }
+  
+  .container2 {
+    margin: 2%;
+  }
+  h5 {
+    font-size: 4.5vw;
+   
+  }
+  h6 {
+    font-size: 3vw;
+  }
+  .hero .content h1 {
+    margin-bottom: auto;
+}
+
+}
+
+
+
+.hero2 {
+  position: relative;
+  height: 80vh;
+  background-image: url('Resim2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* fix the background image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero3 {
+  position: relative;
+  height: 80vh;
+  background-image: url('teamPhoto.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* fix the background image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
